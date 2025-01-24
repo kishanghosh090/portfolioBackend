@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const corsOptions = {
-  origin: "https://react-portfolio-two-flame.vercel.app/",
+  origin: process.env.ORIGIN,
   optionsSuccessStatus: 200,
 };
 
